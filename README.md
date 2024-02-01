@@ -19,12 +19,12 @@ Welcome to the Movie Ticket Booking App! This React application, styled with Boo
 1. Clone the repository:
 
    ```bash
-   git clone https://github.com/your-username/movie-ticket-booking-app.git
+   git clone https://github.com/anwesha2002/QuadB-Tech-assignment.git
 
 2. Navigate to the project directory:
 
    ```bash
-   cd movie-ticket-booking-app
+   cd QuadB-Tech-assignment
    
 3. Install dependencies:
 
