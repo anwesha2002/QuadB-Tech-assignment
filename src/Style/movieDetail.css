@@ -1,0 +1,7 @@
+.movieDetail{
+    filter:  blur(4px) brightness(0.2) opacity(1);
+    background-image: linear-gradient(to right, black , white);
+    height: 600px;
+    object-fit: cover;
+    aspect-ratio: 1;
+}
