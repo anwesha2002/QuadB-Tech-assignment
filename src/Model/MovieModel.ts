@@ -5,7 +5,7 @@ interface  Show{
     genres : string[],
     language : string,
     rating : {average : number},
-    network : {
+    network? : {
         country? : { code : string}
     },
     schedule : {time : number, days : string[]},

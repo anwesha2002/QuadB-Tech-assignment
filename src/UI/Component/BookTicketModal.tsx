@@ -46,7 +46,8 @@ export function BookTicketModal({onDismiss, show, bookedUser, setBookedUser, cli
                 </Modal.Title>
             </Modal.Header>
             <Modal.Body >
-                <button className="rounded-pill px-2 py-1 border-2 border-black me-3">{show.show.network.country?.code}</button>
+                {show.show.network?.country?.code && <button
+                    className="rounded-pill px-2 py-1 border-2 border-black me-3">{show.show.network?.country?.code}</button>}
                 {show.show.genres.map(genre=>(<button className="rounded-pill px-2 py-1 border-2 border-black me-3">{genre}</button>))}
                 <div></div>
                 <div className="my-3">

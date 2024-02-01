@@ -62,11 +62,12 @@ export function BookingPage(){
                                 </div>}
                                 <button className="d-flex align-self-start py-1 px-3">{item.show.language}</button>
                                 <div className="overflow-hidden d-flex flex-row  ">
-                                    <h6 className="overflow-hidden me-2 fs-4">{item.show.runtime} m .</h6>
+                                    {item.show.runtime && <h6 className="overflow-hidden me-2 fs-4">{item.show.runtime} m .</h6>}
                                     {item.show.genres.map(genre=><h6 key={genre} className="overflow-hidden fs-4">{genre}{item.show.genres.indexOf(`${genre}`) != item.show.genres.length-1 && "/"}</h6>)}
-                                    <h6 className="overflow-hidden mx-2 fs-4"> . {item.show.network.country?.code} . </h6>
-                                    <h6 className="overflow-hidden fs-4 me-2">{item.show.schedule.days} . </h6>
-                                    <h6 className="overflow-hidden fs-4">{item.show.schedule.time}</h6>
+                                    {item.show.network?.country?.code &&  <h6
+                                        className="overflow-hidden mx-2 fs-4"> . {item.show.network?.country?.code} . </h6>}
+                                    {item.show.schedule.days && <h6 className="overflow-hidden fs-4 me-2">{item.show.schedule.days} . </h6>}
+                                    {item.show.schedule.time && <h6 className="overflow-hidden fs-4">{item.show.schedule.time}</h6>}
                                 </div>
                             </div>
                             <Button onClick={() => setClicked(true)} size="lg" style={{fontSize: "30px"}}
