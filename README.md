@@ -49,7 +49,7 @@ Open your browser and visit http://localhost:3000 to explore the Movie Ticket Bo
       - src/UI/Pages - Contains all pages of the application.
       - src/UI/Component - Contains all components of the application.
       - src/UI/Context - Contains a sharable context file.
- - src/Data - Contains a function of the fatched data from the API.
+ - src/Data - Contains a function of the fetched data from the API.
  - src/Model - Contains the model/interfaces.
  - src/Style - Contains all external CSS file.
 
