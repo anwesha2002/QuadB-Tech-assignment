@@ -6,7 +6,7 @@ export function HomePage(){
     return(
         <>
             <Navbar/>
-            <Container>
+            <Container >
                 <Movies/>
             </Container>
         </>

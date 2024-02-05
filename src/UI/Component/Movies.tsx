@@ -8,7 +8,7 @@ export function Movies(){
     return(
         <div className="d-flex flex-column justify-content-around ">
             <h3 className="overflow-hidden">Recommended Movies</h3>
-            <Row md={2} lg={3} xs={1} className="g-3 my-3">
+            <Row md={2} lg={3} xs={1} className="g-3 my-3 d-flex justify-content-around align-self-center">
                 {data.map(item=> (
                     (item.show.image) &&
                     <Col key={item.show.id}><Show {...item}/></Col>

@@ -5,7 +5,7 @@ import "../../Style/Navbar.css"
 
 export function Navbar(){
     return(
-        <NavbarBS className="position-sticky top-0">
+        <NavbarBS className="position-sticky top-0 m-1">
             <Container fluid="lg" className="d-flex justify-content-around">
                 <NavbarBS.Brand>
                     <img alt="brand" className="brand" src={brand}/>
